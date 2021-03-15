@@ -9,6 +9,49 @@
   box-sizing: border-box;
 }
 
+
+* {
+  box-sizing: border-box;
+}
+.menu {
+  
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.menu a {
+  background-color: #333;
+  padding:8px;
+  margin-top:7px;
+  font-family: Sans-serif ;
+  display:block;
+  width:100%;
+  color: #f2f2f2;
+}
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+  font-family: Sans-serif ;
+
+}
+.right {
+  background-color:#e5e5e5;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+}
+
+
 body {
   margin: 0;
 }
@@ -52,18 +95,56 @@ body {
 <body>
 
 <div class="header">
-  <img src="/imagenes/logo.png">
+  <img src="imagenes/logo.png">
   
   
 </div>
 
+
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="buscar viaje calendario.html">Buscar Viaje</a>
+    <a href="realizar viaje.html">Realizar viaje</a>
+    <a href="historial viaje.html">Historial de viaje</a>
+    <a href="recargar puntos.html">Recargar puntos</a>
+    <a href="contacto.html">contact us</a>
+  </div>
+
+<!-- 
 <div class="topnav">
-  <a href="#">Search trip</a>
-  <a href="#">Make trip</a>
-  <a href="#">Recharge points  </a>
-  <a href="#">contact us</a>
-  <a href="#">travel history</a>
+  <a href="buscar viaje calendario.html">Buscar Viaje</a>
+  <a href="realizar viaje.html">Realizar Viaje</a>
+  <a href="recargar puntos.html">Recargar puntos  </a>
+  <a href="contacto.html">contact us</a>
+  <a href="historial viaje.html">Historial de vieje</a>
 </div>
+--> 
+
+<div class="main">
+  <h2>Que es Cargafacil:</h2>
+  <h3>Descripción del problema, necesidad o tema de interés: </h3>
+  <p>El sector transporte ha tenido desde principio de su historia un problema concreto: cuando realizo un viaje a un lugar x me tengo que devolver con una pérdida de oportunidad de transportar más carga, esto genera perdida de tiempo y combustible para el conductor y o el dueño del vehículo.</p>
+
+  <h3>Alcance:</h3> 
+  <p>Todos los transportadores y personas naturales o jurídicas que requieran ya sea transportar una carga o tienen algo que necesitan llevar a otra ciudad.</p>
+  <h3>Objetivo general del sistema: </h3> 
+  <p>Facilitar la contratación de transporte entre cliente y transportador</p>
+   
+  <h3>Objetivos específicos del sistema:  </h3>
+   <p>ayudar a los transportadores que tienen viajes de vuelta a la ciudad donde residen o que viajan por alguna razón sin carga a encontrar de manera ágil y segura un viaje para la ciudad de destino evitando pérdidas en su operación.</p> 
+</div>
+
+<div class="right">
+  <h2 style="font-family:Sans-serif;">Tus puntos:</h2>
+  <h5 style=color:rgb(35,145,53);font-family:Sans-serif;font-size:20px;>360</h5>
+  <img src="imagenes/slogan.png" style=width:180px;height:70px;>
+</div>
+</div>
+
+
+
+<div style="background-color:#333;text-align:center;padding:10px;margin-top:7px;color:#ddd;font-family: Sans-serif ;">© copyright Cargafacil.com</div>
+
 
 </body>
 </html>
